@@ -13,11 +13,11 @@ public class ParadiseInfo2 {
 		System.out.println("Enter cutoff price for discount >> ");
 		price =keyboard.nextDouble();
 		
-		System.out.println("Enter discount rate as Whole number "); 
+		System.out.println("Enter discount rate as Whole number >> "); 
 		discount = keyboard.nextDouble();
 		
 		displayInfo();
-		savings = coumputeDiscountInfo(price, discount);
+		savings = computeDiscountInfo(price, discount);
 		System.out.println("Special this week on any service over " + price);
 		System.out.println("Dicount of " + discount + " percent");
 		System.out.println("That's a savings of at least $" + savings);
@@ -27,5 +27,11 @@ public static void displayInfo() {
 	System.out.println("Paradise Day Spa wants to pamper you. ");
 	System.out.println("We will make you look good.");
 }
-public static do
+public static double computeDiscountInfo(double pr, double dscnt) {
+	double savings;
+	
+	savings = pr * dscnt / 100;
+	return savings;
+	
+}
 }

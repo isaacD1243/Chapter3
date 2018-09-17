@@ -1,25 +1,32 @@
 package Debugging;
 
+import java.util.Scanner;
+
 public class debug3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 String name;
-	      name = getName)(;
+		 
+	      name = getName();
 	      displayGreeting(name);           
 	   }
 	   public static String getName()
 	   {
+		   
+		   
 	      String name;
 	      Scanner input = new Scanner(System.in);
 	      System.out.print("Enter name ");
 	      name = input.nextLine();
-	      retrn name;
+	      return name;
+	      
+	      
 	   }
-	   public static void displayGreeting(int name)
+	   public static void displayGreeting(String name)
 	   {
 	      System.out.println("Hello, " + name + "!");
 	   }
 	}
 
-}
+

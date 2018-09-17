@@ -1,5 +1,4 @@
 package Debugging;
-import java.util.Scanner;
 public class debug2 {
 	
 	public static void main(String[] args) {
@@ -15,12 +14,14 @@ public class debug2 {
 	         " and " + b + " is " + (a + b));
 	   }
 	   public static void subtract(int a, int b) {
-		   
+		     int a1 = 5;
+				int b1 = 8;
+				System.out.println("The difference between " +
+			        a1 + " and " + b1 + " is " +  (a1 - b1));
 	   }
 	   {
 		  
-	      System.out.println("The difference between " +
-	        a + " and " + b + " is " +  (a - b));
+	 
 	     
 	}
 
